@@ -9,6 +9,6 @@ public class PrimeNumbers {
             if(checkToPrime(i)){
                 System.out.println(i);
             }
-
+        }
     }
 }
