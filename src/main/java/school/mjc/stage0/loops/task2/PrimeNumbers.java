@@ -9,6 +9,7 @@ public class PrimeNumbers {
             if(checkToPrime(i)){
                 System.out.println(i);
             }
+            i++;
         }
     }
     private static boolean checkToPrime(int i) {
