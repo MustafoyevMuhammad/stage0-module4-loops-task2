@@ -5,8 +5,8 @@ public class Multiplication {
         int i = 0;
         while (Math.abs(i) <= Math.abs(multiplyByAndToInclusive)){
             System.out.println(i * multiplyByAndToInclusive);
-            i = (multiplyByAndToInclusive >= 0)? ++i : --i;
-//            i++;
+//             i = (multiplyByAndToInclusive >= 0)? ++i : --i;
+           i++;
         }
     }
 }
