@@ -11,4 +11,14 @@ public class PrimeNumbers {
             }
         }
     }
+    private static boolean checkToPrime(int i) {
+        int j = 2;
+        while (j < i){
+            if(i % j == 0){
+                return false;
+            }
+            j++;
+        }
+        return true;
+    }
 }
