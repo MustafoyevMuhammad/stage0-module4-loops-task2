@@ -5,7 +5,7 @@ public class FactorialNumbers {
         int a = 1;
         System.out.println(1);
         int i = 1;
-        while (i < printToInclusive){
+        while (i <= printToInclusive){
             System.out.println(a *= i);
             i++;
         }
