@@ -2,19 +2,17 @@ package school.mjc.stage0.loops.task2;
 
 public class PrimeNumbers {
     public void printPrimeNumbers(int printToInclusive) {
-       int i = 2;
-        while (i <= printToInclusive){
-            boolean prime = true;
-            int j = 2;
-            while(j < i){
-                if(i % j == 0 && i != 2){
-                    prime = false;
+      for (int i = 2; i <= printToInclusive; i++) {
+            boolean isPrime=false;
+            for (int j = 2; j <= Math.sqrt(i); j++) {
+                if (i%j==0){
+                    isPrime=true;
                     break;
                 }
-                j++;
             }
-            if(prime) System.out.println(i);
-            i++;
+            if (!isPrime){
+                System.out.println(i);
+            }
         }
     }
    
